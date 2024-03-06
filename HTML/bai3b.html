@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* HEADER */
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+      }
+
+      .header > img {
+        height: 90%;
+      }
+
+      .color-or {
+        color: rgb(241, 180, 66) !important;
+      }
+
+      .header a {
+        color: #ccc;
+      }
+
+      .header input {
+        height: 40px;
+        width: 280px;
+      }
+      /* NAV */
+      .navb {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #000;
+      }
+
+      .navb > li {
+        list-style: none;
+        height: 40px;
+        width: 120px;
+      }
+
+      .navb > li > a {
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+      }
+
+      .carousel-inner img {
+        width: 100%;
+      }
+
+      /* FILTER */
+      .fiter-nav {
+        height: 50px;
+      }
+
+      .fiter-nav > li {
+        display: inline-block;
+        min-width: 200px;
+        height: 100%;
+      }
+
+      .fiter-nav > li:first-child {
+        border-bottom: 2px solid rgb(180, 118, 2);
+      }
+
+      .fiter-nav > li > a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        color: #616161 !important;
+        font-weight: 700;
+      }
+      /* FORM*/
+      form input {
+        padding: 5px;
+      }
+
+      form > * {
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      form > *:last-child {
+        display: block;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="../IMG/Bai3/logo.jpeg" alt="" />
+      <input type="search" placeholder="Search in here ..." />
+      <div class="res">
+        <a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+        <span><a class="color-or" href="#">VN</a> / <a href="#">EN</a></span>
+      </div>
+    </div>
+    <div class="navb">
+      <li><a href="#">Mua vé</a></li>
+      <li><a href="#">Phim mới</a></li>
+      <li><a href="#">Hỗ trợ</a></li>
+      <li><a href="#">Thành viên</a></li>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../IMG/Bai3/ca1.jpg"
+            alt="Los Angeles"
+            width="1100"
+            height="500"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../IMG/Bai3/ca2.jpeg"
+            alt="Chicago"
+            width="1100"
+            height="500"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../IMG/Bai3/ca3.jpeg"
+            alt="New York"
+            width="1100"
+            height="500"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- FILTER -->
+    <div class="container">
+      <div class="fiter-nav">
+        <li><a href="#">PHIM ĐANG CHIẾU</a></li>
+        <li><a href="#">PHIM HOT</a></li>
+        <li><a href="#">PHIM SẮP RA</a></li>
+      </div>
+      <!-- CARD -->
+      <div class="row mt-2">
+        <div class="col-4">
+          <div class="px-3 card" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="../IMG/Bai3/ca1.jpg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Nhà bà nữ</h4>
+              <a href="#" class="btn btn-primary">Đặt ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="px-3 card" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="../IMG/Bai3/ca1.jpg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Nhà bà nữ</h4>
+              <a href="#" class="btn btn-primary">Đặt ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="px-3 card" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="../IMG/Bai3/ca3.jpeg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Nhà bà nữ</h4>
+              <a href="#" class="btn btn-primary">Đặt ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
+    <!-- The Modal -->
+    <div class="fade modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              <h2>
+                <span>ĐĂNG NHẬP</span> |
+                <span class="color-or">ĐĂNG KÝ</span>
+              </h2>
+            </h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="">
+              <input
+                class="form-control"
+                type="text"
+                name=""
+                id=""
+                placeholder="Họ tên"
+              />
+              <div class="form-inline">
+                <input
+                  class="form-control"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Số điện thoại"
+                />
+                <div class="form-group">
+                  <select class="form-control" id="sel1">
+                    <option>Chọn giới tính</option>
+                    <option>Nam</option>
+                    <option>Nữ</option>
+                  </select>
+                </div>
+              </div>
+
+              <input
+                class="form-control"
+                type="email"
+                name=""
+                id=""
+                placeholder="Email"
+              />
+
+              <div class="form-inline">
+                <input
+                  class="form-control"
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Mật khẩu"
+                />
+                <input
+                  class="form-control"
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Nhập lại mật khẩu"
+                />
+              </div>
+              <div class="form-inline">
+                <div class="form-group">
+                  <select class="form-control" id="sel1">
+                    <option>Chọn thành phố</option>
+                    <option>TPHCM</option>
+                    <option>Hà Nội</option>
+                    <option>Huế</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="sel1">
+                    <option>Quận</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+
+              <input
+                class="form-control"
+                type="text"
+                name=""
+                id=""
+                placeholder="Địa chỉ"
+              />
+
+              <input class="form-control" type="date" name="" id="" />
+              <div style="word-spacing: 1px; font-size: 15px">
+                Tôi đã đọc và đồng ý với
+                <a
+                  href=""
+                  class="color-or"
+                  style="padding: 0 !important; margin: 0 !important"
+                  >chính sách</a
+                >
+                của chương trình
+              </div>
+            </form>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              class="btn"
+              style="background-color: orange; width: 100%; color: #fff"
+            >
+              Đăng ký
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

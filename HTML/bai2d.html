@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="was-validated border border-secondary p-2"
+        action=""
+        style="width: 70%; margin: auto"
+      >
+        <div class="row">
+          <div class="form-group col-4">
+            <lable class="form-label">First name</lable>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="Mark"
+            />
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+
+          <div class="form-group col-4">
+            <lable class="form-label">Last name</lable>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="Otto"
+            />
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="form-group col-4">
+            <lable class="form-label">First name</lable>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input
+                required
+                type="text"
+                class="form-control"
+                placeholder="Username"
+              />
+              <div class="invalid-feedback">Please choose a username</div>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 form-group">
+            <label for="" class="form-label">City</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="City"
+            />
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please provide a valid city.</div>
+          </div>
+          <div class="col-3 form-group">
+            <label for="" class="form-label">State</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="State"
+            />
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please provide a valid sate.</div>
+          </div>
+          <div class="col-3 form-group">
+            <label for="" class="form-label">Zip</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="Zip"
+            />
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please provide a valid zip.</div>
+          </div>
+        </div>
+
+        <div class="form-check-inline text-danger">
+          <label for="" class="form-check-label">
+            <input type="checkbox" name="" id="" class="form-check-input" />
+            Agree to terms and conditions
+            <p class="pl-4">You must agree before submitting</p>
+          </label>
+        </div>
+        <br />
+        <div class="btn btn-primary">Submit form</div>
+      </form>
+    </div>
+  </body>
+</html>
